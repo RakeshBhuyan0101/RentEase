@@ -1,0 +1,116 @@
+body {
+    background-color: #f7f8fc;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Ensure footer stays pinned to the bottom */
+.footer-bar {
+    margin-top: auto;
+}
+
+/* Wrapper takes the remaining height between navbar and footer */
+.login-wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+    width: 100%;
+}
+
+/* The login card for desktop and tablet */
+.login-card {
+    width: 100%;
+    max-width: 520px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 44px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.logo-box {
+    width: 58px;
+    height: 58px;
+    background: #e8efeb;
+    color: #2d6a4f;
+    font-size: 26px;
+    border-radius: 10px;
+}
+
+.green-link {
+    color: #2d6a4f;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.green-link:hover {
+    text-decoration: underline;
+}
+
+.input-group-text,
+.form-control {
+    background: #f7f8fc;
+    border: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.input-group-text {
+    color: #6b7280;
+}
+
+.form-control:focus {
+    background: #f7f8fc;
+    box-shadow: none;
+}
+
+.input-group:focus-within {
+    outline: 2px solid #2d6a4f;
+    border-radius: 6px;
+}
+
+.btn-signin {
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease;
+}
+
+.btn-signin:hover {
+    background: #222;
+    color: #fff;
+}
+
+.form-check-input:checked {
+    background-color: #000;
+    border-color: #000;
+}
+
+/* Mobile Screen: Card fills full height between navbar and footer */
+@media (max-width: 576px) {
+    .login-wrapper {
+        padding: 0;
+        align-items: stretch;
+    }
+
+    .login-card {
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+        padding: 32px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 auto;
+        min-height: 100%;
+    }
+}
