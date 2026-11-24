@@ -20,8 +20,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
     <!-- Page Specific CSS -->
     <?php if (isset($customCSS)): ?>
-        <link rel="stylesheet"
-              href="../assets/css/<?= htmlspecialchars($customCSS) ?>?v=<?= time() ?>">
+        <link rel="stylesheet" href="/RentEase/assets/css/<?= htmlspecialchars($customCSS) ?>?v=<?= time() ?>">
     <?php endif; ?>
 </head>
 
@@ -45,16 +44,6 @@ if (session_status() === PHP_SESSION_NONE) {
            onclick="return confirm('Are you sure you want to log out?');">
           Logout
         </a>
-      <?php else: ?>
-        <span class="small text-muted-custom d-none d-sm-inline"
-              style="font-size:12px;">
-          Assistance  Concierge
-        </span>
       <?php endif; ?>
-
-      <span class="d-inline-flex align-items-center justify-content-center bg-black text-white rounded-3"
-            style="width:36px;height:36px;">
-        <i class="bi bi-person-fill fs-5"></i>
-      </span>
     </div>
   </nav>

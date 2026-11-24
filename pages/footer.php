@@ -17,7 +17,7 @@
 
  <!-- Page-Specific Script -->
   <?php if (isset($customJS)): ?>
-    <script src="../assets/js/<?= htmlspecialchars($customJS) ?>?v=<?= time() ?>"></script>
+    <script src="/RentEase/assets/js/<?= htmlspecialchars($customJS) ?>?v=<?= time() ?>"></script>
   <?php endif; ?>
 </body>
 </html>

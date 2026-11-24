@@ -10,9 +10,10 @@
       header('Location:' . ($dashboards[$role] ?? './signin.php'));
       exit;
   }
-
+  // 
     $customCSS = "signin.css";
     $customJS = "signin.js";
+    
     include_once "navbar.php";
 ?>
 
@@ -59,13 +60,6 @@
 
     <p class="text-center text-secondary small mt-4 mb-0">
       Don't have an account? <a href="signup.php" class="green-link">Sign up for RentEase</a>
-    </p>
-
-  </div>
-</main>
-
-<?php include_once "footer.php"; ?>
-p for RentEase</a>
     </p>
 
   </div>
