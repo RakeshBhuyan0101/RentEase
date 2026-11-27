@@ -1,0 +1,295 @@
+body {
+    background-color: #f7f9fd;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    color: #1a202c;
+}
+
+.tenant-container {
+    max-width: 1140px;
+}
+
+/* Subtitle & Header */
+.tenant-subtitle {
+    font-size: 11px;
+    font-weight: 700;
+    color: #2d6a4f;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.tenant-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+}
+
+/* Navigation Tabs */
+.dashboard-tabs {
+    border-bottom: 1.5px solid #e2e8f0;
+}
+
+.dash-tab {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 15px;
+    font-weight: 600;
+    color: #64748b;
+    padding: 10px 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dash-tab:hover {
+    color: #0f172a;
+}
+
+.dash-tab.active {
+    color: #0f172a;
+    border-bottom-color: #2d6a4f;
+}
+
+.badge-count {
+    background-color: #2d6a4f;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 50%;
+}
+
+/* Filters Card */
+.filter-bar-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.filter-bar-card .form-control,
+.filter-bar-card .form-select {
+    background-color: #f8fafd;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 13.5px;
+    padding: 9px 12px;
+}
+
+.filter-bar-card .form-control:focus,
+.filter-bar-card .form-select:focus {
+    border-color: #2d6a4f;
+    box-shadow: none;
+    background-color: #fff;
+}
+
+/* Property Cards */
+.prop-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.prop-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.prop-img-box {
+    width: 100%;
+    height: 190px;
+    background-color: #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.prop-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prop-badge-floating {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: rgba(15, 23, 42, 0.85);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+}
+
+.prop-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.prop-rent-highlight {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.prop-rent-highlight span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #64748b;
+}
+
+.prop-title-link {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+.prop-location-sub {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+.prop-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.prop-tag {
+    background-color: #edf3fb;
+    color: #2d6a4f;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.btn-book-prop {
+    background-color: #2d6a4f;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 13.5px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    margin-top: auto;
+    transition: background-color 0.15s ease;
+}
+
+.btn-book-prop:hover {
+    background-color: #245740;
+    color: #ffffff;
+}
+
+/* My Bookings Card */
+.tenant-booking-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.booking-specs-box {
+    background-color: #edf3fb;
+    border-radius: 8px;
+    padding: 14px 16px;
+}
+
+.spec-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    margin-bottom: 2px;
+}
+
+.spec-val {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.tenant-note {
+    background-color: #f8fafc;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-style: italic;
+    font-size: 13px;
+    color: #475569;
+}
+
+/* Status Badges */
+.badge-status {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.badge-approved {
+    background-color: #d1f7c4;
+    color: #1e7e34;
+}
+
+.badge-pending {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.badge-rejected, .badge-cancelled {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+/* Filter Pills Group */
+.filter-pills-group {
+    background-color: #edf2f9;
+    padding: 4px;
+    border-radius: 10px;
+    display: inline-flex;
+    gap: 2px;
+}
+
+.filter-pill {
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #475569;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.filter-pill:hover {
+    color: #0f172a;
+}
+
+.filter-pill.active {
+    background-color: #ffffff;
+    color: #0f172a;
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+

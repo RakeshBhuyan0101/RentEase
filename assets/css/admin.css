@@ -1,0 +1,297 @@
+body {
+    background-color: #f7f9fd;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    color: #1a202c;
+}
+
+.admin-container {
+    max-width: 1100px;
+}
+
+/* Subtitle & Header */
+.admin-subtitle {
+    font-size: 11px;
+    font-weight: 700;
+    color: #2d6a4f;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.admin-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+}
+
+/* Navigation Tabs */
+.dashboard-tabs {
+    border-bottom: 1.5px solid #e2e8f0;
+}
+
+.dash-tab {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 15px;
+    font-weight: 600;
+    color: #64748b;
+    padding: 10px 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dash-tab:hover {
+    color: #0f172a;
+}
+
+.dash-tab.active {
+    color: #0f172a;
+    border-bottom-color: #2d6a4f;
+}
+
+.badge-count {
+    background-color: #dc2626;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 50%;
+}
+
+/* Search input */
+.search-box {
+    width: 320px;
+    max-width: 100%;
+}
+
+.search-box input {
+    background-color: #edf2f9;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 10px 16px;
+    color: #334155;
+}
+
+.search-box input:focus {
+    background-color: #fff;
+    border-color: #2d6a4f;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Filter Pills Group */
+.filter-pills-group {
+    background-color: #edf2f9;
+    padding: 4px;
+    border-radius: 10px;
+    display: inline-flex;
+    gap: 2px;
+}
+
+.filter-pill {
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #475569;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.filter-pill:hover {
+    color: #0f172a;
+}
+
+.filter-pill.active {
+    background-color: #ffffff;
+    color: #0f172a;
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Table Card */
+.table-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.custom-table thead tr {
+    background-color: #eef3fc;
+}
+
+.custom-table th {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 0.05em;
+    padding: 14px 20px;
+    border-bottom: none;
+}
+
+.custom-table td {
+    padding: 18px 20px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.custom-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Avatar icon */
+.prop-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.avatar-blue {
+    background-color: #e0e9fa;
+    color: #2d6a4f;
+}
+
+.avatar-purple {
+    background-color: #ede9fe;
+    color: #6d28d9;
+}
+
+.prop-title {
+    font-weight: 700;
+    font-size: 14.5px;
+    color: #0f172a;
+}
+
+.prop-sub {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* Status Badges */
+.badge-status {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.badge-approved, .badge-active {
+    background-color: #d1f7c4;
+    color: #1e7e34;
+}
+
+.badge-pending {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.badge-rejected, .badge-blocked {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.badge-tenant {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.badge-owner {
+    background-color: #fef9c3;
+    color: #854d0e;
+}
+
+.badge-admin {
+    background-color: #ede9fe;
+    color: #6d28d9;
+}
+
+/* Action Buttons */
+.btn-approve-sm {
+    background-color: #2d6a4f;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+.btn-approve-sm:hover {
+    background-color: #245740;
+    color: #fff;
+}
+
+.btn-reject-sm {
+    background-color: #fee2e2;
+    color: #dc2626;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+.btn-reject-sm:hover {
+    background-color: #fca5a5;
+    color: #991b1b;
+}
+
+.btn-toggle-block {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* Stat Cards */
+.stat-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    height: 100%;
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.stat-val {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.stat-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+}
+

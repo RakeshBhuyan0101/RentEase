@@ -12,8 +12,8 @@ if (!isset($_SESSION['user_id']) || ($_SESSION['role'] ?? '') !== 'owner') {
 require_once __DIR__ . '/../../config/db.php';
 
 $ownerId = $_SESSION['user_id'];
-$bookingId = intval($_POST['booking_id'] ?? 0);
-$status = strtolower(trim($_POST['status'] ?? ''));
+$bookingId = intval($_POST['booking_id'] ?? $_GET['id'] ?? 0);
+$status = strtolower(trim($_POST['status'] ?? $_GET['status'] ?? ''));
 
 if (!in_array($status, ['approved', 'rejected', 'pending'])) {
     echo json_encode(['success' => false, 'message' => 'Invalid status']);
